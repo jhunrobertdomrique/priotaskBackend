@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Error</title>
+      <style>
+         body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+         }
+
+         .error-box {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            text-align: center;
+         }
+
+         h1 {
+            margin: 0;
+         }
+
+         .return-button {
+            margin-top: 20px;
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="error-box">
+         <h1>Invalid Input</h1>
+         <button class="return-button" onclick="goBack()">Return</button>
+      </div>
+
+      <script>
+         function goBack() {
+            window.history.back();
+         }
+      </script>
+   </body>
+</html>
